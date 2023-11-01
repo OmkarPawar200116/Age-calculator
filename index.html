@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculator</title>
+    <style>
+        .age-card {
+            position: fixed;
+            width: 40%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 5px 0 rgb(76, 74, 74);
+        }
+
+        #date {
+            width: 50%;
+            padding: 8px 25px;
+            font-size: 15px;
+            border: none;
+            box-shadow: 0px 0px 5px 0 rgb(76, 74, 74);
+            border-radius: 5px;
+        }
+
+        .age {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            box-shadow: 0px 0px 5px 0 rgb(100, 93, 225);
+            border-radius: 5px;
+        }
+
+        .dob {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="age-card">
+            <h1>Age Calculator</h1>
+            <p class="dob">Enter your date of birth</p>
+            <input type="date" id="date">
+            <button onclick="calAge()" class="age">Calculate Age</button>
+            <h2 class="result"></h2>
+        </div>
+    </div>
+</body>
+<script src="AgeCalculator.js"></script>
+
+</html>
